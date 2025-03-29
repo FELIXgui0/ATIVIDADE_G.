@@ -1,5 +1,7 @@
-salario = float(input("Digite o salário inicial: R$"))
+salario = float(input("Digite o salário inicial: "))
 anos = int(input("Digite o número de anos: "))
-for ano in range(anos):
+
+for _ in range(anos):
     salario *= 2
-print(f"Salário após {anos} anos: R${salario}")
+
+print(f"Salário após {anos} anos: R${salario:.2f}")
