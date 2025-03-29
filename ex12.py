@@ -1,8 +1,8 @@
-print("\nExercício 12: Média de alunos por turma")
-turmas = int(input("Digite o número de turmas: "))
-alunos_totais = 0
-for i in range(turmas):
-    alunos = int(input(f"Digite o número de alunos da turma {i+1}: "))
-    alunos_totais += alunos
-media_alunos = alunos_totais / turmas
-print("Média de alunos por turma:", media_alunos)
+turmas = int(input("Digite a quantidade de turmas: "))
+alunos = int(input("Digite a quantidade total de alunos: "))
+
+media_alunos = alunos / turmas
+print(f"A média de alunos por turma é {media_alunos:.2f}")
+
+if media_alunos > 40:
+    print("Aviso: Algumas turmas têm mais de 40 alunos.")
